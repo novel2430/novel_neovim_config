@@ -1,9 +1,9 @@
-local builtin = require('telescope.builtin')
-if not builtin then
+local builtin_state, builtin = check_state('telescope.builtin')
+if not builtin_state then
   return
 end
-local action = require('telescope.actions')
-if not action then
+local action_state, action = check_state('telescope.actions')
+if not action_state then
   return
 end
 
