@@ -1,5 +1,5 @@
 -- Check nvim-cmp install
-local cmp_status_ok, cmp = pcall(require, "cmp")
+local cmp_status_ok, cmp = check_state("cmp")
 if not cmp_status_ok then
   return
 end

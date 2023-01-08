@@ -1,5 +1,5 @@
-local tokyonight = require("tokyonight")
-if not tokyonight then
+local tokyonight_state, tokyonight = check_state("tokyonight")
+if not tokyonight_state then
   return
 end
 tokyonight.setup({

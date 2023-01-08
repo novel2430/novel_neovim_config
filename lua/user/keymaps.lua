@@ -105,7 +105,7 @@ keymap("n", "<Leader>p", "\"+p", opts)
 keymap("v", "p", "\"_d\"ap", opts)
 
 -- NVIM Comment KeyMap
-local comment_status_ok = pcall(require, "nvim_comment")
+local comment_status_ok, comment = check_state("nvim_comment")
 if not comment_status_ok then
   return
 end

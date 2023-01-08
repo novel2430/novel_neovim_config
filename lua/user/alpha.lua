@@ -1,12 +1,11 @@
-local alpha = require"alpha"
-if not alpha then
+local alpha_state, alpha = check_state("alpha")
+local startify_state, startify = check_state("alpha.themes.startify")
+if not alpha_state then
+   return
+end
+if not startify_state then
   return
 end
-local startify = require"alpha.themes.startify"
-if not startify then
-  return
-end
-
 
 startify.section.header.val = {
     -- [[                                   __                ]],

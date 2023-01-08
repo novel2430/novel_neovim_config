@@ -1,6 +1,14 @@
 -- Setup nvim-cmp.
-local status_ok, npairs = pcall(require, "nvim-autopairs")
+local status_ok, npairs = check_state("nvim-autopairs")
+local cmp_status_ok, cmp = check_state("cmp")
+local cmp_autopairs_status, cmp_autopairs = check_state("nvim-autopairs.completion.cmp")
 if not status_ok then
+  return
+end
+if not cmp_status_ok then
+  return
+end
+if not cmp_autopairs_status then
   return
 end
 
@@ -25,9 +33,4 @@ npairs.setup {
   },
 }
 
-local cmp_autopairs = require "nvim-autopairs.completion.cmp"
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
-  return
-end
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })

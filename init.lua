@@ -1,3 +1,4 @@
+require "user.util"
 require "user.options"
 require "user.plugins"
 require "user.keymaps"
@@ -11,4 +12,3 @@ require "user.lualine"
 require "user.alpha"
 require "user.autopairs"
 require "user.telescope"
-

@@ -1,5 +1,5 @@
 -- Check nvim-comment install
-local comment_status_ok, comment = pcall(require, "nvim_comment")
+local comment_status_ok, comment = check_state("nvim_comment")
 if not comment_status_ok then
   return
 end

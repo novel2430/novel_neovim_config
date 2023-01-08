@@ -1,4 +1,7 @@
-local configs = require("nvim-treesitter.configs")
+local ts_state, configs = check_state("nvim-treesitter.configs")
+if not ts_state then
+  return
+end
 configs.setup {
   ensure_installed = {
   "c",
