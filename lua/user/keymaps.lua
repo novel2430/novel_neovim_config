@@ -103,11 +103,3 @@ keymap("n", "p", "\"ap", opts)
 keymap("n", "<Leader>p", "\"+p", opts)
 -- Replace
 keymap("v", "p", "\"_d\"ap", opts)
-
--- NVIM Comment KeyMap
-local comment_status_ok, comment = check_state("nvim_comment")
-if not comment_status_ok then
-  return
-end
-keymap("n", "<C-\\>", ":CommentToggle<CR>", opts)
-keymap("x", "<C-\\>", ":'<,'>CommentToggle<CR>", opts)

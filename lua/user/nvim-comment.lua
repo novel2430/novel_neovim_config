@@ -24,3 +24,8 @@ comment.setup(
     hook = nil
   }
 )
+
+-- KeyMap
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<C-\\>", ":CommentToggle<CR>", opts)
+vim.api.nvim_set_keymap("x", "<C-\\>", ":'<,'>CommentToggle<CR>", opts)
