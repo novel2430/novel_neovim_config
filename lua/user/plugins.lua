@@ -93,6 +93,8 @@ return packer.startup(function(use)
   -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- Color
+  use 'norcalli/nvim-colorizer.lua'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
