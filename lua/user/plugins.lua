@@ -47,7 +47,13 @@ return packer.startup(function(use)
 
   -- ColorScheme
   use "folke/tokyonight.nvim"
-  use 'akai54/2077.nvim'
+  use 'Mofiqul/vscode.nvim'
+  use "rafamadriz/neon"
+  use 'marko-cerovac/material.nvim'
+  use 'Abstract-IDE/Abstract-cs'
+  use 'shaunsingh/nord.nvim'
+  use 'Shatur/neovim-ayu'
+
   -- CMP
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
@@ -95,6 +101,14 @@ return packer.startup(function(use)
   }
   -- Color
   use 'norcalli/nvim-colorizer.lua'
+
+  -- Java
+  use {
+    'mfussenegger/nvim-jdtls',
+    ft = { "java" },
+    module = "jdtls"
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

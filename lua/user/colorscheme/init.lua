@@ -1,4 +1,8 @@
-require "user.colorscheme.tokyo-night"
--- ColorScheme
--- vim.cmd[[colorscheme tokyonight]]
--- vim.cmd[[colorscheme 2077 ]]
+-- require "user.colorscheme.tokyo-night"
+require "user.colorscheme.vscode"
+-- require "user.colorscheme.neon"
+-- require "user.colorscheme.abstract-cs"
+-- require "user.colorscheme.material"
+-- require "user.colorscheme.nord"
+-- require "user.colorscheme.ayu"
+-- require "user.colorscheme.default-good"

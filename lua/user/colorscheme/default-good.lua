@@ -1,0 +1,7 @@
+vim.cmd [[colorscheme desert]]
+-- vim.cmd [[colorscheme default]]
+-- vim.cmd [[colorscheme elflord]]
+-- vim.cmd [[colorscheme evening]]
+-- vim.cmd [[colorscheme habamax]]
+-- vim.cmd [[colorscheme slate]]
+-- vim.cmd [[colorscheme torte]]
