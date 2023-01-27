@@ -8,8 +8,11 @@ require "user.LSP"
 require "user.treesitter"
 require "user.nvim-comment"
 require "user.nvim-lastplace"
+require "user.wpm"
 require "user.lualine"
 require "user.alpha"
 require "user.autopairs"
 require "user.telescope"
 require "user.colorizer"
+
+
